@@ -39,6 +39,12 @@
       <artifactId>karate-core</artifactId>
       <version>1.2.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+    <dependency>
+      <groupId>net.masterthought</groupId>
+      <artifactId>cucumber-reporting</artifactId>
+      <version>5.7.2</version>
+    </dependency>
   </dependencies>
 
   <build>

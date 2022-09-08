@@ -4,7 +4,7 @@ Background:
     * def expectedOutput1 = read('../data/result1.json')
     #* def feature1 = read('userDetails1.feature')
     #* def result = call feature1
-    * def result = call read('userDetails1.feature')
+    * def result = call read('userDetailsGetRequest1.feature')
 
 Scenario: request user 3 details
     # https://www.youtube.com/watch?v=J2A3qiFfWzI&list=PLMd2VtYMV0OQkXQ5BrHlZwoTqp17ACsnG&index=4
