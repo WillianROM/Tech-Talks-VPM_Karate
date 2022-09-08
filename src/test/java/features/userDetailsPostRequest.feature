@@ -2,7 +2,7 @@
 Feature: post call test
 
 Background:
-    * def jsonPayload = read('../data/request1.json')
+    * def jsonPayload = read('../data/request1.json') 
     * url 'https://reqres.in/api/users'
     # Deixando o header em background
     * header Content-Type = 'application/json'
@@ -17,3 +17,10 @@ Scenario: create user details
     When method post
     Then status 201
     And print 'response---',response
+
+
+Scenario: new create user details
+    And request jsonPayload //Request deve estar antes do method
+    When method POST
+    Then status 201
+    And print response
